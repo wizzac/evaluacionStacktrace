@@ -1,0 +1,10 @@
+1_Parti de base de un proyecto ya creado al cual modifique por lo tanto el .war generado puede ser mas 
+grande de lo que deberia ser un proyecto vanilla.
+2_ los endpoints reciben los datos en formato json (calculo que esto es lo standard)pero no es problema cambiar a texto o form.
+3_ el borrado es logico manejado por el campo estado no fisico de la base 
+4_ asumi algunos campos como no nulos para la creacion ed la base 
+5_las operaciones sobre la base se podrian implementar en una capa de servicios pero no lo vi necesario para una app tan chica 
+6_ hay un tema entre los action que mapean automaticamente con un parametro de la url y los test,
+que basicamente no encuentro manera de pasar el parametro de id, al test. Podria cambiar los action 
+para poder pasar el parametro por post, pero no considero que sea bueno cambiar algo que esta 
+implementado de manera correcta porque aun no resuelvo como pasar ese parametro para poder testear.

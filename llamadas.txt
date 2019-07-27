@@ -1,0 +1,75 @@
+
+alumnos:
+get:	http://localhost:8090/escuela/getAlumnos
+
+post: http://localhost:8090/escuela/createAlumno
+{
+	nombre:'pedro',
+	apellido:'perez',
+	tipoDocumento:'Dni',
+	numeroDocumento:'654321654',
+	fechaNacimiento:'12/11/1992',
+	domicilioActual:'justo aca',
+	sexo:'M',
+	telefono:'321564'
+	
+}
+put: http://localhost:8090/escuela/alumno/updateAlumno/$id
+{
+	telefono:111
+}
+
+delete: http://localhost:8090/escuela/deleteAlumno/$id
+
+get: http://localhost:8090/escuela/alumno/cursosByAlumno/$id
+
+get: http://localhost:8090/escuela/alumno/finalizaByAlumno/$id
+
+Cursos:
+
+post: http://localhost:8090/escuela/curso/createCurso
+{
+	nombre= 'asd'
+    descripcion= 'asd'
+    duracion= 200
+    notaAprobar= 20
+}
+
+get: http://localhost:8090/escuela/getCursos
+
+delete: http://localhost:8090/escuela/deleteCurso/$id
+
+put : http://localhost:8090/escuela/curso/updateCurso/$id
+
+get: http://localhost:8090/escuela/curso/alumnosByCurso/$id
+
+Profesor:
+get :http://localhost:8090/escuela/getProfesores
+
+post: http://localhost:8090/escuela/createProfesor
+{
+	nombre:'pedro',
+	apellido:'perez',
+	tipoDocumento:'Dni',
+	numeroDocumento:'654321654',
+	fechaNacimiento:'12/11/1992',
+	domicilioActual:'justo aca',
+	sexo:'M',
+	telefono:'321564'
+}
+
+
+get: http://localhost:8090/escuela/profesor/cursosByProfesor/$id
+
+
+delete: http://localhost:8090/profesor/deleteProfesor/$id
+
+put : http://localhost:8090/profesor/updateProfesor/$id
+{
+	telefono:111
+}
+
+
+Graduados:
+
+get:  http://localhost:8090/escuela/aprobadosByMateria/$id 

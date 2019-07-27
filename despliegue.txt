@@ -1,0 +1,14 @@
+//*probado en entornos de windows 
+
+tener alguna instancia de mysql corriendo en la pc, jdk y jre instalados.
+Crear una base de datos llamada escuela
+crear una carpeta llamada devel en el disco C.
+pegar el archivo "escuelaConfig.properties" alli
+Abrir con algun editor de texto y cambiar las credenciales para tener acceso a la base de datos
+(no abrir con block de notas, por alguna razon mata los saltos de linea)
+Instalar tomcat8
+en la carpeta de webapps de tomcat pegar el archivo .war 
+esperar 5-10 minutos a que levante la aplicacion 
+Ejecutar inicializar.sql
+ 
+ eso deberia levantar la aplicacion de manera local en el puerto asignado a tomcat /escuela
